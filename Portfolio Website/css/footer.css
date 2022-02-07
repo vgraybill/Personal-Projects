@@ -68,6 +68,7 @@ small {
 
 @media screen and (min-width: 900px){
     .social ul{
+        padding-top: 50px;
         width: 30%;
     }
     .container {
@@ -79,6 +80,6 @@ small {
         width: 20%;
     }
     .container {
-        width: 55%;
+        width: 40%;
     }
 }

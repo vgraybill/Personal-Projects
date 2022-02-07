@@ -74,3 +74,13 @@ setInterval(function(){
     sliderAuto();
     }
 },0)
+
+$('article').on('mouseenter', function(){
+    current=$(this);
+    current.find('.overlay').stop().transit({'background':'rgba(42, 39, 64, 0.7)'}, 300)
+});
+$('article').on('mouseleave', function(){
+    current=$(this);
+    current.find('.overlay').stop().transit({'background':'rgba(42, 39, 64, 0.376)'}, 200)
+    // current.find('.overlay').transit({'background':'rgba(42, 39, 64, 0.376)'}, 200)
+});
