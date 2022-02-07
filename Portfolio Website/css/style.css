@@ -1,4 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600&display=swap');
+/*header styles*/
+@import url('header.css');
+@import url('hero.css');
+@import url('footer.css');
+
 
 /* font-family: 'Poiret One', cursive;
 font-family: 'Source Sans Pro', sans-serif; */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2a2740;
+    background-image: url('../img/bg-bubbles.png');
+    background-size: cover;
+}
+.button{
+    text-align: center;
+    font-size: 1.25rem;
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid aliceblue;
+    padding: 7px 5px 8px;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+}
+.button:hover{
+    color: #99bdff;
+    background-color: aliceblue;
+    border: 2px solid transparent;
+}
+
+/* header STYLES MOBILE */
+
+.hr{
+    width: 50%;
+    height: 2px;
+    background: rgb(161,133,255);
+    background: linear-gradient(90deg, rgba(161,133,255,1) 0%, rgba(125,169,250,1) 47%, rgba(126,210,213,1) 100%);
+    margin: 0 auto;
+}
+h3 {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-style: italic;
+    color: #9474ff;
+
+}
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.projects article {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 10px;
+    background-color: #9474ff;
+    text-align: center;
+    color:aliceblue;
+}
+article div div {
+    position: relative;
+}
+article div div h4 {
+    font-weight: 500;
+    padding: 20px;
+    font-size: 1.125rem;
+    
+}
+
+
+

@@ -1,0 +1,56 @@
+<div class="blerb">
+    <h2>Elegant responsive designs</h2>
+    <p>HTML, CSS, JS and Jquery</p>
+    <a href="" class="button">See Projects</a>
+</div>
+<div class="blerb">
+    <h2>Digital and print projects</h2>
+    <p>Adobe Creative Suite</p>
+    <a href="" class="button">See Projects</a>
+</div>
+<div class="blerb">
+    <h2>Illustrations come to life</h2>
+    <p>Procreate on the iPad</p>
+    <a href="" class="button">See Projects</a>
+</div>
+
+
+<script>
+let blerbCount = 0;
+            let currBlerb= 1;
+
+            $('.blerb').each( function(i){
+                let blerb= $(this)
+
+                if(i != 0){
+                    blerb.css({'display':'none'});
+                } else {
+                    blerb.css({'display':'block'});
+                }
+                blerb.attr('id', i+1);
+		        blerbCount++;
+
+            })
+
+            function nextBlerb(){
+                let incomingBlerb = currBlerb+1;
+                    if(incomingBlerb > blerbCount){
+                        incomingBlerb = 1;
+                    }
+
+                    $('#'+currBlerb).animate({'opacity':'100%'},6000).animate({'opacity':'0'}, 2000, function(){
+                        $(this).css({'display':'none'});
+                        $('#'+incomingBlerb).css({'display':'block', 'opacity':'0'}).animate({'opacity':'100%'}, 1000);
+                        currBlerb = incomingBlerb;
+                    });
+                    
+
+                }
+                
+                setInterval(function(){
+                if ( document.hasFocus() ) {
+                    nextBlerb();
+                }
+                }, 9000);
+</script>
+                
