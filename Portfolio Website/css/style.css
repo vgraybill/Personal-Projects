@@ -54,6 +54,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 .projects article {
     width: 12.5rem;
@@ -70,6 +71,8 @@ article div div h4 {
     font-weight: 500;
     padding: 20px;
     font-size: 1.125rem;
+    position: relative;
+    top: 40%;
     
 }
 
