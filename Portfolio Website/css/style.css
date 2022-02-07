@@ -66,13 +66,18 @@ h3 {
 }
 article div div {
     position: relative;
+    width: 10.5rem;
+    height: 10.5rem;
+    border: 2px solid aliceblue;
+    margin: 7% auto;
 }
 article div div h4 {
     font-weight: 500;
     padding: 20px;
     font-size: 1.125rem;
     position: relative;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
     
 }
 
