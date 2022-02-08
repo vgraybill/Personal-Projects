@@ -77,10 +77,15 @@ setInterval(function(){
 
 $('article').on('mouseenter', function(){
     current=$(this);
-    current.find('.overlay').stop().transit({'background':'rgba(42, 39, 64, 0.7)'}, 300)
+    current.stop().transit({'background-size':'170%'}, 300);
+    current.find('.overlay').stop().transit({'background':'rgba(42, 39, 64, 0.8)'}, 300);
+    current.find('h4').transit({'opacity':'100%'},300);
+    current.find('h4').parent().transit({'border':'2px solid aliceblue'},300);
 });
 $('article').on('mouseleave', function(){
     current=$(this);
-    current.find('.overlay').stop().transit({'background':'rgba(42, 39, 64, 0.376)'}, 200)
-    // current.find('.overlay').transit({'background':'rgba(42, 39, 64, 0.376)'}, 200)
+    current.stop().transit({'background-size':'100%'}, 300);
+    current.find('.overlay').stop().transit({'background':'transparent'}, 200)
+    current.find('h4').transit({'opacity':'0'},300);
+    current.find('h4').parent().transit({'border':'2px solid rgba(240, 248, 255, 0.445)'},300);
 });

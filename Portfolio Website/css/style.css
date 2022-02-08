@@ -61,7 +61,6 @@ h3 {
     width: 12.5rem;
     height: 12.5rem;
     margin: 10px;
-    background-color: #9474ff;
     text-align: center;
     color:aliceblue;
     position: relative;
@@ -70,24 +69,40 @@ article div{
     width: 12.5rem;
     height: 12.5rem;
     position: absolute;
-    background:rgba(42, 39, 64, 0.376);
 }
 article div div {
     position: relative;
-    width: 10.5rem;
-    height: 10.5rem;
-    border: 2px solid aliceblue;
-    margin: 7% auto;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid rgba(240, 248, 255, 0.445);
+    margin: 9% auto;
     background: transparent;
 }
 article div div h4 {
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: .1rem;
     padding: 20px;
     font-size: 1.125rem;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0;
     
+}
+#feat1 {
+    background-image: url('../img/featured/bitesizedmockup.webp');
+    background-size: 100%;
+    background-position: center;
+}
+#feat2{
+    background-image: url('../img/featured/pixelpatchmockup.webp');
+    background-size: 100%;
+    background-position: center;
+}
+#feat3{
+    background-image: url('../img/featured/palletmockup.webp');
+    background-size: 100%;
+    background-position: center;
 }
 
 @media screen and (min-width:750px){
@@ -107,9 +122,9 @@ article div div h4 {
         height: 15.5rem;
     }
     article div div {
-        width: 13rem;
-        height: 13rem;
-        margin: 7% auto;
+        width: 12rem;
+        height: 12rem;
+        margin: 10% auto;
     }
     article div div h4 {
         font-size: 1.5rem;
