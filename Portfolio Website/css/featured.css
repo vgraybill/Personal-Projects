@@ -1,0 +1,109 @@
+.projects {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto 50px;
+    max-width: 458px;
+}
+.projects article {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 10px;
+    text-align: center;
+    color:aliceblue;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+}
+article div{
+    width: 12.5rem;
+    height: 12.5rem;
+    position: absolute;
+}
+article div div {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid transparent;
+    margin: 9% auto;
+    background: transparent;
+}
+article div div h4 {
+    font-weight: 700;
+    letter-spacing: .1rem;
+    padding: 20px;
+    font-size: 1.125rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    
+}
+#feat1 {
+    background-image: url('../img/featured/bitesizedmockup.webp');
+}
+#feat2{
+    background-image: url('../img/featured/pixelpatchmockup.webp');
+}
+#feat3{
+    background-image: url('../img/featured/palletmockup.webp');
+}
+#feat4{
+    background-image: url('../img/featured/stickermockup.webp');
+}
+#feat5{
+    background-image: url('../img/featured/palletmockup.webp');
+}
+#feat6{
+    background-image: url('../img/featured/stickermockup.webp');
+}
+
+@media screen and (min-width:750px){
+    .projects {
+        max-width: 670px;
+    }
+
+    
+}
+@media screen and (min-width:900px){
+
+    .projects {
+        max-width: 805px;
+    }
+    .projects article,  article div {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    article div div {
+        width: 12rem;
+        height: 12rem;
+        margin: 10% auto;
+    }
+    article div div h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        
+    }
+}
+
+@media screen and (min-width:1550px){
+    .projects {
+        max-width: 1050px;
+        /* max-width: none; */
+    }
+    .projects article,  article div {
+        width: 20.5rem;
+        height: 20.5rem;
+    }
+    article div div {
+        width: 17rem;
+        height: 17rem;
+        margin: 8% auto;
+    }
+    article div div h4 {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        
+    }
+}
