@@ -3,6 +3,7 @@
 @import url('header.css');
 @import url('hero.css');
 @import url('footer.css');
+@import url('form.css');
 
 
 /* font-family: 'Poiret One', cursive;
@@ -10,7 +11,7 @@ font-family: 'Source Sans Pro', sans-serif; */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #2a2740;
-    background-image: url('../img/bg-bubbles.png');
+    background-image: url('../img/bg-bubbles.webp');
     background-size: cover;
 }
 .button{
@@ -54,7 +55,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px auto;
+    margin: 20px auto 50px;
     max-width: 458px;
 }
 .projects article {
@@ -64,6 +65,8 @@ h3 {
     text-align: center;
     color:aliceblue;
     position: relative;
+    background-size: 100%;
+    background-position: center;
 }
 article div{
     width: 12.5rem;
@@ -74,7 +77,7 @@ article div div {
     position: relative;
     width: 10rem;
     height: 10rem;
-    border: 2px solid rgba(240, 248, 255, 0.445);
+    border: 2px solid transparent;
     margin: 9% auto;
     background: transparent;
 }
@@ -91,18 +94,21 @@ article div div h4 {
 }
 #feat1 {
     background-image: url('../img/featured/bitesizedmockup.webp');
-    background-size: 100%;
-    background-position: center;
 }
 #feat2{
     background-image: url('../img/featured/pixelpatchmockup.webp');
-    background-size: 100%;
-    background-position: center;
 }
 #feat3{
     background-image: url('../img/featured/palletmockup.webp');
-    background-size: 100%;
-    background-position: center;
+}
+#feat4{
+    background-image: url('../img/featured/stickermockup.webp');
+}
+#feat5{
+    background-image: url('../img/featured/palletmockup.webp');
+}
+#feat6{
+    background-image: url('../img/featured/stickermockup.webp');
 }
 
 @media screen and (min-width:750px){

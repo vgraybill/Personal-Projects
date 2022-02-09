@@ -15,69 +15,42 @@ $('.nav').on('click', function(){
 });
 
 
-console.log($(window).width)
-
-function left(){
-    $('.hero').transit({'background-position':'-50px'}, 7000);
-}
-function right(){
-    $('.hero').transit({'background-position':'-100px'}, 7000);
-};
-
-    
+    let i = 0;
     function sliderAuto() {
-        if($(window).width() < 900){
-            right();
 
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero2.webp")', 'opacity':'100%'},2000);
-            left();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero3.webp")', 'opacity':'100%'},2000);
-            right();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero7.webp")', 'opacity':'100%'},2000);
-            left();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero5.webp")', 'opacity':'100%'},2000);
-            right();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero6.webp")', 'opacity':'100%'},2000);
-            left();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero1.webp")', 'opacity':'100%'},2000);
-        } else if ($(window).width() >= 900) {
-            right();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero2lg.webp")', 'opacity':'100%'},2000);
-            left();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero3lg.webp")', 'opacity':'100%'},2000);
-            right();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero7lg.webp")', 'opacity':'100%'},2000);
-            left();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero5lg.webp")', 'opacity':'100%'},2000);
-            right();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero6lg.webp")', 'opacity':'100%'},2000);
-            left();
-
-            $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero1lg.webp")', 'opacity':'100%'},2000);
+        if (i >= 6){
+            i=0;
         }
+        i++;
 
+        if($(window).width() < 900){
+            if(i == 1 | i == 3 | i == 5){
+                $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero'+i+'.webp")', 'opacity':'100%'},2000).transit({'background-position':'-100px'}, 7000);
+            } 
+            if(i == 2 | i == 4 | i == 6){
+                $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero'+i+'.webp")', 'opacity':'100%'},2000).transit({'background-position':'-50px'}, 7000);
+            }
+        }
+        if ($(window).width() >= 900){
+            if (i == 1 | i == 3 | i == 5) {
+                $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero'+i+'lg.webp")', 'opacity':'100%'},2000).transit({'background-position':'-100px'}, 7000);
+            }
+            if (i == 2 | i == 4 | i == 6) {
+                $('.hero').transit({'opacity':'50%','background-image':'url("img/hero/hero'+i+'lg.webp")', 'opacity':'100%'},2000).transit({'background-position':'-50px'}, 7000);
+            } 
+        }
     }
 
 sliderAuto();
+
 setInterval(function(){
-    if (document.hasFocus()){
-    sliderAuto();
-    }
-},0)
+        sliderAuto();
+},9000)
+
 
 $('article').on('mouseenter', function(){
     current=$(this);
-    current.stop().transit({'background-size':'170%'}, 300);
+    current.stop().transit({'background-size':'150%'}, 300);
     current.find('.overlay').stop().transit({'background':'rgba(42, 39, 64, 0.8)'}, 300);
     current.find('h4').transit({'opacity':'100%'},300);
     current.find('h4').parent().transit({'border':'2px solid aliceblue'},300);
@@ -87,5 +60,5 @@ $('article').on('mouseleave', function(){
     current.stop().transit({'background-size':'100%'}, 300);
     current.find('.overlay').stop().transit({'background':'transparent'}, 200)
     current.find('h4').transit({'opacity':'0'},300);
-    current.find('h4').parent().transit({'border':'2px solid rgba(240, 248, 255, 0.445)'},300);
+    current.find('h4').parent().transit({'border':'2px solid transparent'},300);
 });

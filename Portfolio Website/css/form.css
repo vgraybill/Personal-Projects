@@ -1,0 +1,80 @@
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 750px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.25rem;
+}
+form label {
+    margin-bottom: 10px;
+}
+input[type=text]{
+    padding: 10px 40px;
+}
+input[type=text], textarea{
+    border: 1px solid rgba(125,169,250,1);
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+input[type=text]#name {
+    background: url("../img/person.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 4px;
+    background-color: rgba(253, 253, 253, 0.438);
+    
+}
+input[type=text]#email {
+    background: url("../img/at.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 2px;
+    background-color: rgba(253, 253, 253, 0.438);
+    
+}
+textarea {
+    padding: 10px;
+    resize: none;
+    height: 200px;
+    background-color: rgba(250, 250, 250, 0.438);
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: 1px solid rgba(161,133,255,1);
+    border: 1px solid rgba(161,133,255,1);
+}
+input.button {
+    background-color: transparent;
+    color: rgba(161,133,255,1);
+    border: 2px solid rgba(161,133,255,1);
+    margin-bottom: 50px;
+}
+input.button:hover {
+    color: aliceblue;
+    background-color: rgba(161,133,255,1);
+    border: 2px solid rgba(161,133,255,1);
+}
+
+@media screen and (min-width: 1095px){
+    form div {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    input{
+        width: 77%;
+    }
+    textarea{
+        width: 85%;
+    }
+    label{
+        position: relative;
+        top:10px;
+    }
+    input.button{
+        width: 15%;
+    }
+}
