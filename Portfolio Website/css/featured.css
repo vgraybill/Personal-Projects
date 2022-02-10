@@ -23,11 +23,9 @@ article div{
 }
 article div div {
     position: relative;
-    width: 12rem;
-    height: 3.5rem;
-    border: 2px solid transparent;
-    margin: 1% auto;
-    background: transparent;
+    width: 12.5rem;
+    height: 12.5rem;
+    background: linear-gradient(180deg, rgba(42,39,64,.7) 40%, rgba(42,39,64,0) 95%);
 }
 article div div h4 {
     font-weight: 700;
@@ -35,9 +33,8 @@ article div div h4 {
     padding: 10px;
     font-size: 1.125rem;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
+    top: 5%;
+    opacity: 100%;
     
 }
 #feat1 {
@@ -79,10 +76,18 @@ article div div h4 {
         width: 12rem;
         height: 12rem;
         margin: 10% auto;
+        background: transparent;
     }
     article div div h4 {
         font-size: 1.5rem;
         line-height: 2rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+        padding: 10px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
         
     }
 }
