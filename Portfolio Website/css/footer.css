@@ -46,7 +46,7 @@ small {
     .social ul {
         width: 45%;
     }
-    .container {
+    footer section.container {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;
@@ -71,7 +71,7 @@ small {
         padding-top: 50px;
         width: 30%;
     }
-    .container {
+    footer section.container {
         width: 80%;
     }
 }
@@ -79,7 +79,7 @@ small {
     .social ul{
         width: 20%;
     }
-    .container {
+    footer section.container {
         width: 40%;
     }
 }

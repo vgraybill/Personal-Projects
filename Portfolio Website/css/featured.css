@@ -18,21 +18,21 @@
 }
 article div{
     width: 12.5rem;
-    height: 12.5rem;
+    height: 4rem;
     position: absolute;
 }
 article div div {
     position: relative;
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 3.5rem;
     border: 2px solid transparent;
-    margin: 9% auto;
+    margin: 1% auto;
     background: transparent;
 }
 article div div h4 {
     font-weight: 700;
     letter-spacing: .1rem;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.125rem;
     position: relative;
     top: 50%;

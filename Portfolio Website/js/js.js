@@ -49,16 +49,22 @@ setInterval(function(){
 
 
 $('article').on('mouseenter', function(){
+    if ($(window).width() > 550) {
     current=$(this);
     current.stop().transit({'background-size':'150%'}, 300);
     current.find('.overlay').stop().transit({'background':'rgba(42, 39, 64, 0.8)'}, 300);
     current.find('h4').transit({'opacity':'100%'},300);
     current.find('h4').parent().transit({'border':'2px solid aliceblue'},300);
+    }
 });
+
+
 $('article').on('mouseleave', function(){
+    if ($(window).width() > 550) {
     current=$(this);
     current.stop().transit({'background-size':'100%'}, 300);
     current.find('.overlay').stop().transit({'background':'transparent'}, 200)
     current.find('h4').transit({'opacity':'0'},300);
     current.find('h4').parent().transit({'border':'2px solid transparent'},300);
+}
 });
