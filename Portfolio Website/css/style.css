@@ -71,11 +71,21 @@ aside p {
 @media screen and (min-width:560px){
 
 }
-@media screen and (min-width:750px) {
-
+@media screen and (min-width:800px) {
+    div.container{
+        flex-direction: row;
+        max-width: 1050px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    aside {
+        width: 40%;
+    }
 }
 @media screen and (min-width: 900px){
-
+    aside {
+        width: 50%;
+    }
 }
 
 
