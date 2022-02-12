@@ -67,6 +67,21 @@ aside p {
     line-height: 1.6rem;
     padding: 20px 0;
 }
+aside h4 {
+    font-family: 'Poiret One', cursive;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.25rem;
+
+}
+#left-arrow {
+    display: none
+}
+#down-arrow {
+    display: block;
+    text-align: center;
+}
 
 @media screen and (min-width:560px){
 
@@ -77,6 +92,13 @@ aside p {
         max-width: 1050px;
         margin: 0 auto;
         justify-content: space-between;
+    }
+    #left-arrow {
+        display: block;
+        text-align: center;
+    }
+    #down-arrow {
+        display: none;
     }
     aside {
         width: 40%;

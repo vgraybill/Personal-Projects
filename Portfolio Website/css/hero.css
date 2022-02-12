@@ -53,8 +53,15 @@ div.gradient .button:hover{
 }
 .phero.gd {
     background-image: url('../img/hero/hero3.webp');
-
 }
+.phero.wd {
+    background-image: url('../img/hero/hero1.webp');
+}
+.phero.il {
+    background-image: url('../img/hero/hero4.webp');
+    background-position: -60px -70px;
+}
+
 div.pgradient {
     background: rgb(42,39,64);
     background: linear-gradient(19deg, rgba(42,39,64,1) 20%, rgba(42,39,64,0) 93%);
@@ -159,6 +166,12 @@ div.pgradient p{
 
     .phero.gd {
         background-image: url('../img/hero/hero3lg.webp');
+    }
+    .phero.wd {
+        background-image: url('../img/hero/hero1lg.webp');
+    }
+    .phero.il {
+        background-image: url('../img/hero/hero4lg.webp');
     }
     .phero, div.gradient {
         background-size: 120%;

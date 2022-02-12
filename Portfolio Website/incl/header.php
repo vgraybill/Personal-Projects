@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="">Web Design</a></li>
                     <li><a href="">Graphic Design</a></li>
-                    <li><a href="">Illustration</a></li>
+                    <li><a href="http://ginnygraybill.com/int/illustration/index.html">Illustration</a></li>
                     <li><a href="">About</a></li>
                 </ul>
                 <div class="info">
