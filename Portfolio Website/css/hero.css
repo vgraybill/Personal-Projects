@@ -51,6 +51,10 @@ div.gradient .button:hover{
     height: 10rem;
     margin-bottom: 50px;
 }
+.phero a {
+    color: aliceblue;
+    text-decoration: none;
+}
 .phero.gd {
     background-image: url('../img/hero/hero3.webp');
 }

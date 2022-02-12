@@ -3,6 +3,7 @@
 @import url('header.css');
 @import url('hero.css');
 @import url('featured.css');
+@import url('gallery.css');
 @import url('form-short.css');
 @import url('footer.css');
 
@@ -57,15 +58,24 @@ h3 {
 div.container {
     display: flex;
     flex-direction: column-reverse;
+    padding-bottom: 50px
 }
 aside {
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 aside p {
     font-size: 1.125rem;
     line-height: 1.6rem;
     padding: 20px 0;
+}
+p.center {
+    text-align: center;
+}
+p.center a{
+    color:rgb(88, 190, 194);
+    text-decoration: none;
+    font-weight: 600;
 }
 aside h4 {
     font-family: 'Poiret One', cursive;
@@ -83,9 +93,7 @@ aside h4 {
     text-align: center;
 }
 
-@media screen and (min-width:560px){
 
-}
 @media screen and (min-width:800px) {
     div.container{
         flex-direction: row;

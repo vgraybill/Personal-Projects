@@ -64,7 +64,6 @@ $('article').on('mouseenter', function(){
 $('article').on('mouseleave', function(){
     if ($(window).width() > 900) {
         current=$(this);
-        console.log(current.parent())
         current.stop().transit({'background-size':'100%'}, 300);
         if (current.parent().parent().hasClass('int') == false){
             current.find('.overlay').stop().transit({'background':'transparent'}, 200)

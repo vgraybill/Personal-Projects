@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Ginny Graybill Designs Home Page" content="Ginny Graybill's Graphic Design and Web Development portfolio.">
     <title>Ginny Graybill Designs - Web and Graphic Design</title>
-    <link href="../../css/reset.css" type="text/css" rel="stylesheet">
-    <link href="../../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../../../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../../css/style.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/843ca2f650.js" crossorigin="anonymous"></script>
 </head>
 
@@ -52,7 +52,7 @@
     <section class="phero il">
         <div class="pgradient">
             <div class="pblerb">
-                <h2>Illustration</h2>
+                <h2><a href="../index.html">Illustration</a> <i class="fa-solid fa-angle-right"></i> <span>Recent Misc</span></h2>
             </div>
     </section>
 
@@ -61,58 +61,58 @@
     <div class="hr"></div> -->
 
     <div class="container">
-        <section class="projects int">
-                <article>
-                    <a href="">
-                        <img src="../../img/illustrations/preview/pastportrait.webp" alt="pastel portrait gallery">
-                    </a>
+        <section class="projects gal">
+            <div class="column1">
+                <article id="1">
+                    <img src="../../../img/illustrations/misc01.webp" alt="">
                 </article>
-
-                <article>
-                    <a href="kawaii-creatures/index.html">
-                        <img src="../../img/illustrations/preview/kawaiicre.webp" alt="kawaii creatures gallery">
-                    </a>
+                <article id="2">
+                    <img src="../../../img/illustrations/misc02.webp" alt="">
                 </article>
-
-                <article>
-                    <a href="">
-                        <img src="../../img/illustrations/preview/soft.webp" alt="">
-                    </a>
+                <article id="3">
+                    <img src="../../../img/illustrations/misc05.webp" alt="">
                 </article>
-                <article>
-                    <a href="misc/index.html">
-                        <img src="../../img/illustrations/preview/misc.webp" alt="">
-                    </a>
+            </div>
+            <div class="column2">
+                <article id="4">
+                    <img src="../../../img/illustrations/misc03.webp" alt="">
                 </article>
-                <article>
-                    <a href="intergalactic-goddesses/index.html">
-                        <img src="../../img/illustrations/preview/goddess.webp" alt="">
-                    </a>
+                <article id="5">
+                    <img src="../../../img/illustrations/misc04.webp" alt="">
                 </article>
-                <article>
-                    <a href="inktober2021/index.html">
-                        <img src="../../img/illustrations/preview/inktober.webp" alt="Inktober 2021">
-                    </a>
-                </article>
-                <article class="text">
-                    <a href="">
-                        Pre-2021
-                    </a>
-                </article>
+            </div>
         </section>
         <aside>
-            <div class="hr"></div>
-            <h3>Introduction</h3>
-            <div class="hr"></div>
+            <div class="intro display">
+                <div class="hr"></div>
+                <h3>Introduction</h3>
+                <div class="hr"></div>
 
-            <p>Shown are a mixture personal and commissioned projects drawn using Procreate for the iPad.</p>
-            <p></p>
-            <h4>Select a collection</h4>
-            <p><i class="fa-solid fa-arrow-left-long" id="left-arrow"></i>
-                <i class="fa-solid fa-arrow-down-long" id="down-arrow"></i></p>
-
+                <p>Recent illustrations that have no other catagory. Born from TikTok trends and commissioned pieces.</p>
+                <p class="center"></p>
+                <h4>Select an image to zoom</h4>
+                <p><i class="fa-solid fa-arrow-left-long" id="left-arrow"></i>
+                    <i class="fa-solid fa-arrow-down-long" id="down-arrow"></i></p>
+            </div>
+            <div id="img1">
+                <img src="../../../img/illustrations/misc01.webp" alt="">
+            </div>
+            <div id="img2">
+                <img src="../../../img/illustrations/misc02.webp" alt="">
+            </div>
+            <div id="img3">
+                <img src="../../../img/illustrations/misc05.webp" alt="">
+            </div>
+            <div id="img4">
+                <img src="../../../img/illustrations/misc03.webp" alt="">
+            </div>            
+            <div id="img5">
+                <img src="../../../img/illustrations/misc04.webp" alt="">
+            </div>
         </aside>
     </div>
+
+
     
 
 </main>
@@ -150,7 +150,30 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="../../js/jquery.transit.min.js"></script>
-    <script src="../../js/js.js"></script>
+    <script src="../../../js/jquery.transit.min.js"></script>
+    <script src="../../../js/js.js"></script>
+    <script>
+        $('article').on('click', function(){
+            let i = $(this).attr('id')
+            let parent = $(this).parent().parent().parent();
+            parent.find('.current').removeClass('current')
+            $(this).addClass('current')
+            parent.find('#img'+i)
+            parent.find('.currentimg').stop().removeClass('currentimg').fadeOut(0);
+            if (parent.find('.intro').hasClass('display')){
+                parent.find('.intro').fadeOut(100);
+                parent.find('.intro').removeClass('display')
+            }
+            parent.find('#img'+i).addClass('currentimg').fadeIn(800);
+        });
+        $('span').on('click', function(){
+            let parent = $('main').find('.container').find('aside');
+            if (parent.find('intro').hasClass('display')==false){
+                parent.find('.currentimg').css({'display':'none'}).removeClass('currentimg');
+                parent.find('.intro').addClass('display').fadeIn(1000);
+                $('.current').removeClass('current')
+            }
+        });
+    </script>
 
 </body>
