@@ -19,9 +19,9 @@
             <div class="nav closed"><i class="fas fa-bars"></i></div>
             <div class="links">
                 <ul>
-                    <li><a href="">Web Design</a></li>
-                    <li><a href="">Graphic Design</a></li>
-                    <li><a href="http://ginnygraybill.com/int/illustration/index.html">Illustration</a></li>
+                    <li><a href="../int/webdesign/index.html">Web Design</a></li>
+                    <li><a href="../int/graphicdesign/index.html">Graphic Design</a></li>
+                    <li><a href="../int/illustration/index.html">Illustration</a></li>
                     <li><a href="">About</a></li>
                 </ul>
                 <div class="info">
