@@ -1,3 +1,12 @@
+<?php 
+require('config.php');
+require('vendor/PHPMailer/src/Exception.php');
+require('vendor/PHPMailer/src/PHPMailer.php');
+require('vendor/PHPMailer/src/SMTP.php');
+
+require_once('incl/functions.php');
+require('incl/contact-pars.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,13 +54,13 @@
         <div class="hr"></div>
 
         <section class="projects">
-            <article id="feat1">
+            <a href="int/webdesign/bitesized/index.html"><article id="feat1">
                 <div class="overlay">
                     <div>
                         <h4>Bite Sized Building Company</h4>
                     </div>
                 </div>
-            </article>
+            </article></a>
             <article id="feat4">
                 <div class="overlay">
                     <div>
@@ -73,14 +82,14 @@
                     </div>
                 </div>
             </article>
-            <article id="feat6">
+            <article id="feat5">
                 <div class="overlay">
                     <div>
                         <h4>Apple Ad Concept</h4>
                     </div>
                 </div>
             </article>
-            <article id= "feat5">
+            <article id= "feat6">
                 <div class="overlay">
                     <div>
                         <h4>Sticker Designs</h4>
@@ -89,24 +98,27 @@
             </article>
         </section>
 
-        <div class="hr"></div>
-        <h3>Quick Contact</h3>
+        <div class="hr" id="contact"></div>
+        <h3>Contact</h3>
         <div class="hr"></div>
 
-        <form>
+        <?php show_feedback($message, $class, $errors); ?>
+
+        <form action="index.php#contact" method="post">
             <div>
-                <label>Name </label>
-                <input type="text" name="name" id="name">
+                <label>Name</label>
+                <input type="text" name="name" id="name" value="<?php echo htmlspecialchars($name); ?>">
             </div>
             <div>
                 <label>E-mail </label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" value="<?php echo htmlspecialchars($email); ?>">
             </div>
             <div>
                 <label>Message </label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message"><?php echo htmlspecialchars($messages); ?></textarea>
             </div>
             <input type="submit" value="Send" class="button">
+            <input type="hidden" name="did_submit" value="1">
 
         </form>
 

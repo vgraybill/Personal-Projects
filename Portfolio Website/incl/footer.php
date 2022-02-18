@@ -11,13 +11,13 @@
         <section class="container">
             <nav>
                 <ul>
-                    <li><a href="">Web Design</a></li>
-                    <li><a href="">Graphic Design</a></li>
-                    <li><a href="">Illustration</a></li>
+                    <li><a href="../int/webdesign/index.html">Web Design</a></li>
+                    <li><a href="../int/graphicdesign/index.html">Graphic Design</a></li>
+                    <li><a href="../int/illustration/index.html">Illustration</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="../int/about/index.html">About</a></li>
+                    <li><a href="../index.php#contact">Contact</a></li>
                     <li><a href="">Resume</a></li>
                 </ul>
             </nav>

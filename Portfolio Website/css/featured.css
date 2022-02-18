@@ -17,7 +17,6 @@
     position: relative;
     background-size: 100%;
     background-position: center;
-    border: 1px solid rgb(208, 204, 224);
 }
 
 .projects.int article.text{
@@ -59,7 +58,7 @@ article div div h4 {
     background-image: url('../img/featured/stickermockup.webp');
 }
 #feat5{
-    background-image: url('../img/featured/palletmockup.webp');
+    background-image: url('../img/featured/magazinemockup.webp');
 }
 #feat6{
     background-image: url('../img/featured/stickermockup.webp');

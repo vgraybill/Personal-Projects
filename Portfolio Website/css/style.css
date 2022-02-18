@@ -77,7 +77,20 @@ div.container section {
 div.container section img {
     width: 100%;
     margin: 0 auto;
-
+}
+div.container .img-container {
+    width: 90%;
+    margin: 0 auto;
+}
+div.container section.info a.button {
+    color:#9474ff;
+    border: 2px solid #9474ff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+div.container section.info a.button:hover {
+    color:#fff;
+    background-color: #9474ff;
 }
 aside {
     width: 90%;
@@ -110,14 +123,29 @@ aside h4 {
     display: block;
     text-align: center;
 }
+section.info p {
+    line-height: 1.75rem;
+    padding: 10px 20px;
+    text-indent: 30px;
+}
+h4{
+    margin: 0 auto;
+    text-align: center;
+}
 
-
+@media screen and (min-width:550px) {
+    div.container .img-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
 @media screen and (min-width:800px) {
     div.container{
         flex-direction: row;
         max-width: 1050px;
         margin: 0 auto;
         justify-content: space-between;
+        align-items: center;
     }
     div.container.single {
         width: 100%;
@@ -132,6 +160,11 @@ aside h4 {
         width: 95%;
         margin: 0 auto;
     }
+    div.container .img-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
     #left-arrow {
         display: block;
         text-align: center;
@@ -147,6 +180,10 @@ aside h4 {
     aside {
         width: 50%;
     }
+    div.container .img-container {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width: 1400px){
     div.container{
@@ -159,6 +196,10 @@ aside h4 {
         font-size: 1.125rem;
         line-height: 1.6rem;
         padding: 20px 35px;
+    }
+    div.container .img-container {
+        width: 40%;
+        margin: 0 auto;
     }
 }
 
