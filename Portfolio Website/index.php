@@ -4,8 +4,8 @@ require('vendor/PHPMailer/src/Exception.php');
 require('vendor/PHPMailer/src/PHPMailer.php');
 require('vendor/PHPMailer/src/SMTP.php');
 
-require_once('incl/functions.php');
-require('incl/contact-pars.php'); ?>
+require_once('int/incl/functions.php');
+require('int/incl/contact-pars.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,12 +29,31 @@ require('incl/contact-pars.php'); ?>
     <link rel="preload" as="image" href="img/hero/hero5lg.webp">
     <link rel="preload" as="image" href="img/hero/hero6lg.webp">
     <link rel="preload" as="image" href="img/hero/hero4lg.webp">
+    <link rel="icon"  type="image/png" href="img/favicon.png">
 
     <script src="https://kit.fontawesome.com/843ca2f650.js" crossorigin="anonymous"></script>
+    <style>
+        div#feedback {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 25px;
+        }
+        div#feedback h4{
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.6rem;
+            padding-bottom: 10px;
+        }
+        div#feedback ul{
+            margin: 0 auto;
+            width: fit-content;
+        }
+        </style>
 </head>
 <body>
 
-<?php include('incl/header.php') ?>
+<?php include('int/incl/header.php') ?>
 
     <main>
         <section class="hero">
@@ -43,7 +62,7 @@ require('incl/contact-pars.php'); ?>
                     <h2>Design and Development</h2>
                     <p>Using HTML, CSS, JS and Jquery, the Adobe Creative Suite and Procreate
                     </p>
-                    <a href="" class="button">See Projects</a>
+                    <!-- <a href="" class="button">See Projects</a> -->
                 </div>
             </div>
         </section>
@@ -54,48 +73,60 @@ require('incl/contact-pars.php'); ?>
         <div class="hr"></div>
 
         <section class="projects">
-            <a href="int/webdesign/bitesized/index.html"><article id="feat1">
-                <div class="overlay">
-                    <div>
-                        <h4>Bite Sized Building Company</h4>
+            <a href="int/webdesign/bitesized/index.html">
+                <article id="feat1">
+                    <div class="overlay">
+                        <div>
+                            <h4>Bite Sized Building Company</h4>
+                        </div>
                     </div>
-                </div>
-            </article></a>
-            <article id="feat4">
-                <div class="overlay">
-                    <div>
-                        <h4>Sticker Designs</h4>
+                </article>
+            </a>
+            <a href="int/graphicdesign/stickers/index.html">
+                <article id="feat4">
+                    <div class="overlay">
+                        <div>
+                            <h4>Sticker Designs</h4>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article id="feat2">
-                <div class="overlay">
-                    <div>
-                        <h4>The Pixel Patch</h4>
+                </article>
+            </a>
+            <a href="int/webdesign/pixelpatch/index.html">
+                <article id="feat2">
+                    <div class="overlay">
+                        <div>
+                            <h4>The Pixel Patch</h4>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article id="feat3">
-                <div class="overlay">
-                    <div>
-                        <h4>Eyeshadow Pallet Concept</h4>
+                </article>
+            </a>
+            <a href="int/graphicdesign/eyeshadow/index.html">
+                <article id="feat3">
+                    <div class="overlay">
+                        <div>
+                            <h4>Eyeshadow Pallet Concept</h4>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article id="feat5">
-                <div class="overlay">
-                    <div>
-                        <h4>Apple Ad Concept</h4>
+                </article>
+            </a>
+            <a href="int/graphicdesign/appleads/index.html">
+                <article id="feat5">
+                    <div class="overlay">
+                        <div>
+                            <h4>Apple Ad Concept</h4>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article id= "feat6">
-                <div class="overlay">
-                    <div>
-                        <h4>Sticker Designs</h4>
+                </article>
+            </a>
+            <a href="int/illustration/kawaii-creatures/index.html">
+                <article id= "feat6">
+                    <div class="overlay">
+                        <div>
+                            <h4>Pastel Creatures</h4>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </a>
         </section>
 
         <div class="hr" id="contact"></div>
@@ -128,4 +159,4 @@ require('incl/contact-pars.php'); ?>
 
 
 
-<?php include('incl/footer.php'); ?>
+<?php include('int/incl/footer.php'); ?>

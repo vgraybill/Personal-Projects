@@ -15,6 +15,7 @@ body {
     color: #2a2740;
     background-image: url('../img/bg-bubbles.webp');
     background-size: cover;
+    scroll-behavior: smooth;
 }
 
 /* BUTTON STYLES */
@@ -128,10 +129,7 @@ section.info p {
     padding: 10px 20px;
     text-indent: 30px;
 }
-h4{
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 @media screen and (min-width:550px) {
     div.container .img-container {
