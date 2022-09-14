@@ -52,7 +52,7 @@
             $mailer->Username = 'ginnygraybilldesigns@gmail.com';
         
             //Your gmail account password goes here
-            $mailer->Password = 'aMgB5uwk53#Y';
+            $mailer->Password = 'password';
         
             // All done! send the mail and make sure it worked
             if( $mailer->Send() ){
